@@ -1,0 +1,22 @@
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.dashboard-main {
+  flex: 1;
+  margin-left: 260px; /* Width of sidebar */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .dashboard-main {
+    margin-left: 0;
+    padding-bottom: 60px; /* Space for mobile nav if implemented */
+  }
+}
